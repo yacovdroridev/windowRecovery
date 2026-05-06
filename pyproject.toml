@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chromeopen"
-version = "1.0.0"
+version = "1.1.0"
 description = "Recover Google Chrome profiles after a reboot or crash on Linux"
 readme = "README.md"
 license = { text = "MIT" }

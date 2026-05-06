@@ -6,9 +6,10 @@ from pathlib import Path
 
 CONFIG_DIR = Path.home() / ".config" / "chromeopen"
 SETTINGS_FILE = CONFIG_DIR / "settings.json"
-DEFAULT_SETTINGS = {
+DEFAULT_SETTINGS: dict = {
     "autostart": False,
     "restore_last_session": True,
+    "ignored_profiles": [],
 }
 
 
