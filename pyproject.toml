@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chromeopen"
+version = "1.0.0"
+description = "Recover Google Chrome profiles after a reboot or crash on Linux"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+keywords = ["chrome", "profile", "recovery", "linux"]
+classifiers = [
+  "Environment :: X11 Applications",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Topic :: Utilities",
+]
+
+[project.scripts]
+chromeopen = "chromeopen.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["chromeopen*"]
